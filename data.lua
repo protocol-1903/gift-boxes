@@ -20,7 +20,7 @@ data:extend{
           },
           {type = "item", name = "rocket-silo", amount = 1, weight = 5},
           {type = "item", name = "atomic-bomb", amount = 1, weight = 3},
-          {type = "create-entity", name = "spidertron", amount = 1, weight = 3, message = "Something useful, for once"},
+          {type = "create-entity", name = "spidertron", force = "player", amount = 1, weight = 3, message = "Something useful, for once"},
           {type = "item", name = "infinity-chest", amount = 1, weight = 1}
         }
       },
@@ -83,7 +83,7 @@ data:extend{
           { -- you can also pass entity paramaters, but its rudamentary. basic data types at best, with few exceptions
             type = "create-entity",
             name = "atomic-rocket",
-            position_offset = {60, -40},
+            position_offset = {8000, -6000},
             target_player = true,
             parameters = {
               base_damage_modifiers = {
